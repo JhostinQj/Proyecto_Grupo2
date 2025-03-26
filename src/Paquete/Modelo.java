@@ -23,7 +23,7 @@ public class Modelo {
         this.fila = fila;
     }
     
-    public void crearvector(){
+    public void crearvector(    ){
     vector = new int[fila];
        
 }
