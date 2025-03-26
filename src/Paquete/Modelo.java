@@ -4,5 +4,5 @@
  */
 package Paquete;
 public class Modelo {
-    
+    private 
 }
