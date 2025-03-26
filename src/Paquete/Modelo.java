@@ -4,6 +4,7 @@
  */
 package Paquete;
 public class Modelo {
+    private int fila;
     private int vector [];
 
     public int[] getVector() {
@@ -13,7 +14,8 @@ public class Modelo {
     public void setVector(int[] vector) {
         this.vector = vector;
     }
-    public int crearvector(){
+    public void crearvector(){
+    vector = new int[fila];
     
 }
 }

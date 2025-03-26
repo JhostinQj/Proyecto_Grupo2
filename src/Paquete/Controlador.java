@@ -22,6 +22,7 @@ public class Controlador {
         configurarListeners();
     }
     
+    
     private void configurarListeners() {
         // Botón Acerca de
         this.vista.btnAcercade.addActionListener(e -> mostrarAcercaDe());
