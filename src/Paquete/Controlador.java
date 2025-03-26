@@ -13,6 +13,7 @@ import javax.swing.JFrame;
 public class Controlador {
     private FrmVista vista;
     private Modelo modelo;
+    private Frm3 vista1;
     
     public Controlador(FrmVista vista, Modelo modelo) {
         this.vista = vista;
@@ -41,6 +42,8 @@ public class Controlador {
         
         // Botón Mostrar Mayor
         this.vista.MostrarMayor.addActionListener(e -> mostrarFrm6());
+        
+        //botones del crear vector
     }
     
     private void mostrarAcercaDe() {

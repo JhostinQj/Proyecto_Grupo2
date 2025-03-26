@@ -29,7 +29,7 @@ public class Frm3 extends javax.swing.JDialog {
 
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        lbvector = new javax.swing.JTextField();
         btnDimension = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -38,10 +38,9 @@ public class Frm3 extends javax.swing.JDialog {
 
         jLabel2.setText("Dime la dimension del vecto: ");
 
-        jTextField1.setText("Dimension....");
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        lbvector.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                lbvectorActionPerformed(evt);
             }
         });
 
@@ -62,7 +61,7 @@ public class Frm3 extends javax.swing.JDialog {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addGap(18, 18, 18)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lbvector, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addContainerGap(144, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
@@ -82,7 +81,7 @@ public class Frm3 extends javax.swing.JDialog {
                 .addGap(38, 38, 38)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lbvector, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(btnDimension)
                 .addContainerGap(176, Short.MAX_VALUE))
@@ -91,9 +90,9 @@ public class Frm3 extends javax.swing.JDialog {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void lbvectorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lbvectorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_lbvectorActionPerformed
 
     private void btnDimensionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDimensionActionPerformed
         // TODO add your handling code here:
@@ -145,6 +144,6 @@ public class Frm3 extends javax.swing.JDialog {
     public javax.swing.JButton btnDimension;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JTextField jTextField1;
+    public javax.swing.JTextField lbvector;
     // End of variables declaration//GEN-END:variables
 }
