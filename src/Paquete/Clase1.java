@@ -4,7 +4,6 @@ import javax.swing.JFrame;
 
 public class Clase1 {
     public static void main(String[] args) {
-        // Crear instancias del modelo y la vista
         Modelo modelo = new Modelo();
         FrmVista vista = new FrmVista();
         
