@@ -69,6 +69,7 @@ public class Controlador {
         frm6.setLocationRelativeTo(vista);
         frm6.setVisible(true);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     }
     private void crearVector(){
         this.modelo.setFila(Integer.parseInt(this.vista1.lbvector.getText()));
@@ -76,9 +77,14 @@ public class Controlador {
     }
 }
 =======
+=======
+>>>>>>> Stashed changes
     }//Fin Ventanas
     
     
     
 }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
