@@ -18,34 +18,22 @@ public class Controlador {
     public Controlador(FrmVista vista, Modelo modelo) {
         this.vista = vista;
         this.modelo = modelo;
-        
-        // Configurar listeners para todos los botones
+
         configurarListeners();
     }
     
-    
     private void configurarListeners() {
-        // Botón Acerca de
         this.vista.btnAcercade.addActionListener(e -> mostrarAcercaDe());
-        
-        // Botón Instructivo
         this.vista.btnInstructivo.addActionListener(e -> mostrarInstructivo());
-        
-        // Botón Crear Vector
         this.vista.CrearVec.addActionListener(e -> mostrarFrm3());
-        
-        // Botón Ingresar Datos
         this.vista.IgresarDatos.addActionListener(e -> mostrarFrm4());
-        
-        // Botón Listado
         this.vista.Listado.addActionListener(e -> mostrarFrm5());
-        
-        // Botón Mostrar Mayor
         this.vista.MostrarMayor.addActionListener(e -> mostrarFrm6());
         
         //botones del crear vector
+        this.vista1.btnDimension.addActionListener(e -> crearVector());
     }
-    
+     
     private void mostrarAcercaDe() {
         FrmAcerca acercaDe = new FrmAcerca((JFrame)vista, true);
         acercaDe.setLocationRelativeTo(vista);
@@ -73,12 +61,30 @@ public class Controlador {
     private void mostrarFrm5() {
         Frm5 frm5 = new Frm5((JFrame)vista, true);
         frm5.setLocationRelativeTo(vista);
-        frm5.setVisible(true);
+       frm5.setVisible(true);
     }
     
     private void mostrarFrm6() {
         Frm6 frm6 = new Frm6((JFrame)vista, true);
         frm6.setLocationRelativeTo(vista);
         frm6.setVisible(true);
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+    }
+    private void crearVector(){
+        this.modelo.setFila(Integer.parseInt(this.vista1.lbvector.getText()));
+        this.modelo.crearvector();
     }
 }
+=======
+=======
+>>>>>>> Stashed changes
+    }//Fin Ventanas
+    
+    
+    
+}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes

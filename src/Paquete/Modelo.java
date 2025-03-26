@@ -14,8 +14,17 @@ public class Modelo {
     public void setVector(int[] vector) {
         this.vector = vector;
     }
+
+    public int getFila() {
+        return fila;
+    }
+
+    public void setFila(int fila) {
+        this.fila = fila;
+    }
+    
     public void crearvector(){
     vector = new int[fila];
-    
+       
 }
 }
