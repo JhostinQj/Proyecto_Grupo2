@@ -44,8 +44,9 @@ public class Controlador {
         this.vista.MostrarMayor.addActionListener(e -> mostrarFrm6());
         
         //botones del crear vector
+        this.vista1.btnDimension.addActionListener(e -> crearVector());
     }
-    
+     
     private void mostrarAcercaDe() {
         FrmAcerca acercaDe = new FrmAcerca((JFrame)vista, true);
         acercaDe.setLocationRelativeTo(vista);
@@ -73,12 +74,16 @@ public class Controlador {
     private void mostrarFrm5() {
         Frm5 frm5 = new Frm5((JFrame)vista, true);
         frm5.setLocationRelativeTo(vista);
-        frm5.setVisible(true);
+       frm5.setVisible(true);
     }
     
     private void mostrarFrm6() {
         Frm6 frm6 = new Frm6((JFrame)vista, true);
         frm6.setLocationRelativeTo(vista);
         frm6.setVisible(true);
+    }
+    private void crearVector(){
+        this.modelo.setFila(Integer.parseInt(this.vista1.lbvector.getText()));
+        this.modelo.crearvector();
     }
 }

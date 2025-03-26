@@ -31,6 +31,7 @@ public class Frm3 extends javax.swing.JDialog {
         jLabel2 = new javax.swing.JLabel();
         lbvector = new javax.swing.JTextField();
         btnDimension = new javax.swing.JButton();
+        lblVectorCreado = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -51,6 +52,8 @@ public class Frm3 extends javax.swing.JDialog {
             }
         });
 
+        lblVectorCreado.setText(".....");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -70,7 +73,11 @@ public class Frm3 extends javax.swing.JDialog {
                                 .addComponent(jLabel1)
                                 .addGap(159, 159, 159))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(btnDimension)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(btnDimension)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(lblVectorCreado)
+                                        .addGap(14, 14, 14)))
                                 .addGap(155, 155, 155))))))
         );
         layout.setVerticalGroup(
@@ -84,7 +91,9 @@ public class Frm3 extends javax.swing.JDialog {
                     .addComponent(lbvector, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(btnDimension)
-                .addContainerGap(176, Short.MAX_VALUE))
+                .addGap(41, 41, 41)
+                .addComponent(lblVectorCreado)
+                .addContainerGap(121, Short.MAX_VALUE))
         );
 
         pack();
@@ -144,6 +153,7 @@ public class Frm3 extends javax.swing.JDialog {
     public javax.swing.JButton btnDimension;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    public javax.swing.JLabel lblVectorCreado;
     public javax.swing.JTextField lbvector;
     // End of variables declaration//GEN-END:variables
 }
