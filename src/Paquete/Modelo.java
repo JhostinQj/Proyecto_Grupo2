@@ -4,5 +4,16 @@
  */
 package Paquete;
 public class Modelo {
+    private int vector [];
+
+    public int[] getVector() {
+        return vector;
+    }
+
+    public void setVector(int[] vector) {
+        this.vector = vector;
+    }
+    public int crearvector(){
     
+}
 }
