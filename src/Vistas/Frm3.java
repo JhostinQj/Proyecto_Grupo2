@@ -91,9 +91,13 @@ public class Frm3 extends javax.swing.JDialog {
                     .addComponent(lbvector, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(btnDimension)
+<<<<<<< Updated upstream
                 .addGap(41, 41, 41)
                 .addComponent(lblVectorCreado)
                 .addContainerGap(121, Short.MAX_VALUE))
+=======
+                .addContainerGap(24, Short.MAX_VALUE))
+>>>>>>> Stashed changes
         );
 
         pack();

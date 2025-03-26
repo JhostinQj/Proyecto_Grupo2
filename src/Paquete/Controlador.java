@@ -18,29 +18,16 @@ public class Controlador {
     public Controlador(FrmVista vista, Modelo modelo) {
         this.vista = vista;
         this.modelo = modelo;
-        
-        // Configurar listeners para todos los botones
+
         configurarListeners();
     }
     
-    
     private void configurarListeners() {
-        // Botón Acerca de
         this.vista.btnAcercade.addActionListener(e -> mostrarAcercaDe());
-        
-        // Botón Instructivo
         this.vista.btnInstructivo.addActionListener(e -> mostrarInstructivo());
-        
-        // Botón Crear Vector
         this.vista.CrearVec.addActionListener(e -> mostrarFrm3());
-        
-        // Botón Ingresar Datos
         this.vista.IgresarDatos.addActionListener(e -> mostrarFrm4());
-        
-        // Botón Listado
         this.vista.Listado.addActionListener(e -> mostrarFrm5());
-        
-        // Botón Mostrar Mayor
         this.vista.MostrarMayor.addActionListener(e -> mostrarFrm6());
         
         //botones del crear vector
@@ -81,9 +68,17 @@ public class Controlador {
         Frm6 frm6 = new Frm6((JFrame)vista, true);
         frm6.setLocationRelativeTo(vista);
         frm6.setVisible(true);
+<<<<<<< Updated upstream
     }
     private void crearVector(){
         this.modelo.setFila(Integer.parseInt(this.vista1.lbvector.getText()));
         this.modelo.crearvector();
     }
 }
+=======
+    }//Fin Ventanas
+    
+    
+    
+}
+>>>>>>> Stashed changes
